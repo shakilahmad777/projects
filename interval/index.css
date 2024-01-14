@@ -96,6 +96,9 @@ input {
 .increse {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     margin-top: 1rem;
     gap: 3rem;
 }
@@ -131,5 +134,11 @@ input {
     .increse button {
         padding: 0.5rem 1rem;
         font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .box {
+        width: 80vw;
     }
 }
