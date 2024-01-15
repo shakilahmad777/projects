@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 60%;
+    height: 100vh;
+    margin: 0 auto;
+    background: #000000;
+}
+
+.container {
+    height: 60%;
+    margin: 7% auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0.45rem;
+    background: #FFFFFF;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.display {
+    width: 100%;
+    text-align: center;
+    margin: 3rem 0;
+}
+
+input {
+    width: 50%;
+    padding: 1.2rem 1rem;
+    border-radius: 2.5rem;
+    text-align: center;
+    font-size: 2rem;
+    color: darkgray;
+    outline-color: brown;
+}
+.increse {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+    gap: 3rem;
+}
+
+.increse button {
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    border: none;
+    color: brown;
+    border-radius: 0.5rem;
+    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    
+}
