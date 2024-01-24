@@ -24,3 +24,4 @@ document.getElementById("btn-withdraw").addEventListener("click", function () {
     alert('This Amount is not available...!!!')
   }
 });
+
