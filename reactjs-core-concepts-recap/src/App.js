@@ -2,12 +2,15 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  const nayoks = ['sdhfl', 'ahkdkh', 'hduie', 'ldhfl', 'lieiok']
+  const about = ['sdhfl', 'ahkdkh', 'hduie', 'ldhfl', 'lieiok']
+  const ages = [32];
+  const staddy = ['Diploma IN Engineering']
   return (
     <div className="App">
       {
-        nayoks.map(nayok => <Person name={nayok}></Person>)
+        about.map(about => <Person name={about} age={ages} staddy={staddy}></Person>)
       }
+
       {/* <Person name="Shakl" age="23" stady="diploma in engineering"></Person>
       <Person></Person>
       <Person></Person> */}
@@ -22,7 +25,7 @@ function Person(props) {
     <div className="container">
       <h3>Name: {props.name}</h3>
       <p>Age: {props.age}</p>
-      <p>Staddy: {props.stady}</p>
+      <p>Staddy: {props.staddy}</p>
     </div>
   );
 }
