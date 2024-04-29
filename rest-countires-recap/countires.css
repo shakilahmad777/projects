@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.countires {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+.country {
+    background: gray;
+    color: #fff;
+    border: 5px solid #24d172;
+    padding: 1rem;
+    margin: 0 0.5rem;
+    border-radius: 0.5rem;
+}
+
+h2, h3 {
+    text-align: center;
+    padding: 1rem;
+    color: #24d172;
+}
+p {
+    margin-bottom: 10px;
+}

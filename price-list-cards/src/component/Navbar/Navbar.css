@@ -1,0 +1,8 @@
+.nav-ul {
+    color: red;
+    display: flex;
+}
+
+.nav-ul li {
+    padding: 1rem 0.5rem;
+}
