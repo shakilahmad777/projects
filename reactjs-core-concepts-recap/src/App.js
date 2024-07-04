@@ -2,30 +2,39 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  const about = ['sdhfl', 'ahkdkh', 'hduie', 'ldhfl', 'lieiok']
-  const ages = [32];
-  const staddy = ['Diploma IN Engineering']
+
   return (
     <div className="App">
-      {
-        about.map(about => <Person name={about} age={ages} staddy={staddy}></Person>)
-      }
-
-      {/* <Person name="Shakl" age="23" stady="diploma in engineering"></Person>
+      <h2 className="position">Current Situation of my Friends and Me!!!</h2>
+      <div className="banar">
+      <Friend name="Imran Hossen Bappy" age="23" profession="Computer Engineer, Full Stack Developer"></Friend>
+      <Friend name="Mehedi Hassan" age="23" profession="Computer Engineer, Font-end Developer"></Friend>
+      <Friend name="Nijam Hosain" age="23" profession="Computer Engineer, Font-end Developer"></Friend>
+      <Friend name="Shakil Ahmad" age="23" profession="HTML Engineer"></Friend>
+      <Friend name="Shakil Ahmad" age="23" profession="HTML Engineer"></Friend>
+      {/* <Person></Person> */}
+      <p>lorem ipsum</p>
+      <Products></Products>
       <Person></Person>
-      <Person></Person> */}
-      <h2>this is line breck</h2>
-      <Friend></Friend>
+      </div>
     </div>
   );
+}
+
+
+function Distric(props) {
+  const [power, setPower] = useState(1)
+  const boostPower = () => {
+    const newPower = power * 2;
+    useState(newPower);
+  }
 }
 
 function Person(props) {
   return (
     <div className="container">
-      <h3>Name: {props.name}</h3>
-      <p>Age: {props.age}</p>
-      <p>Staddy: {props.staddy}</p>
+      <h4>Power</h4>
+      <button>Boost the Power</button>
     </div>
   );
 }
@@ -33,10 +42,17 @@ function Person(props) {
 function Friend(props) {
   return (
     <div className="container">
-      <h1>Name: Imran hossen Bappy</h1>
-      <p>Profession: Computer Engineer, <br/> Full Stack Developer</p>
+      <h1>Name: {props.name}</h1>
+      <h2>Age: {props.age}</h2>
+      <p>Profession: {props.profession}</p>
       <p></p>
     </div>
+  )
+}
+
+function Products(props) {
+  return (
+    <h1>heohaldhi</h1>
   )
 }
 
