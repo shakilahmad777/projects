@@ -1,0 +1,14 @@
+.shoes-list {
+    background: lightblue;
+    margin: 1rem;
+    padding: 1rem;
+}
+/* .shoes-list p {
+    display: flex;
+    flex-direction: column;
+    color: black;
+} */
+.shoes-compo {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
