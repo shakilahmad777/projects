@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import {useState} from 'react';
 
 function App() {
 
@@ -10,7 +11,6 @@ function App() {
       <Friend name="Imran Hossen Bappy" age="23" profession="Computer Engineer, Full Stack Developer"></Friend>
       <Friend name="Mehedi Hassan" age="23" profession="Computer Engineer, Font-end Developer"></Friend>
       <Friend name="Nijam Hosain" age="23" profession="Computer Engineer, Font-end Developer"></Friend>
-      <Friend name="Shakil Ahmad" age="23" profession="HTML Engineer"></Friend>
       <Friend name="Shakil Ahmad" age="23" profession="HTML Engineer"></Friend>
       {/* <Person></Person> */}
       <p>lorem ipsum</p>
@@ -23,18 +23,19 @@ function App() {
 
 
 function Distric(props) {
-  const [power, setPower] = useState(1)
-  const boostPower = () => {
-    const newPower = power * 2;
-    useState(newPower);
-  }
+  
 }
 
 function Person(props) {
+  const [power, setPower] = useState(1)
+  const boostPower = () => {
+    const newPower = power * 2;
+    setPower(newPower);
+  }
   return (
     <div className="container">
-      <h4>Power</h4>
-      <button>Boost the Power</button>
+      <h4>Power {power}</h4>
+      <button onClick={boostPower}>Boost the Power</button>
     </div>
   );
 }

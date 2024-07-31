@@ -1,6 +1,7 @@
 import React from 'react';
 import add from '../../utilitise/calculate';
 import './Shoose.css'
+import shoesImage from './Img/windows_pro.jpg';
 
 const Shoose = () => {
     const first = 54;
@@ -13,7 +14,7 @@ const Shoose = () => {
           id: 1,
           name: "Nike Air Max 270",
           brand: "Nike",
-          price: 150.00,
+          price: '$'+ 150.00,
           size: [7, 8, 9, 10, 11],
           color: "Black/White",
           inStock: true,
@@ -24,7 +25,7 @@ const Shoose = () => {
           id: 2,
           name: "Adidas Ultraboost 21",
           brand: "Adidas",
-          price: 180.00,
+          price: '$'+ 180.00,
           size: [6, 7, 8, 9, 10],
           color: "Core Black",
           inStock: false,
@@ -35,7 +36,7 @@ const Shoose = () => {
           id: 3,
           name: "Puma Suede Classic",
           brand: "Puma",
-          price: 65.00,
+          price: '$'+ 65.00,
           size: [6, 7, 8, 9, 10, 11, 12],
           color: "Navy Blue",
           inStock: true,
@@ -46,7 +47,7 @@ const Shoose = () => {
           id: 4,
           name: "New Balance 990v5",
           brand: "New Balance",
-          price: 175.00,
+          price: '$'+ 175.00,
           size: [8, 9, 10, 11, 12],
           color: "Grey",
           inStock: true,
@@ -56,8 +57,19 @@ const Shoose = () => {
     ];   
       
       const shoesList = shoesProductList.map(shoes => {
+        const ID = shoes.id;
+
+        // console.log(ID)
+        const addToCard = () => {
+          // console.log(ID)
+          localStorage.setItem('Added by', ID)
+        }
+
         return <div className='shoes-list'>
-          <p className=''>ID : {shoes.id} Name : {shoes.name.toUpperCase()} Brand :{shoes.brand} Price : {shoes.price.toFixed(2)} Size : {shoes.size.join(",")} Color : {shoes.color}</p>
+          <p className=''>
+          {/* <img src={shoesImage}></img> */}
+            ID : {ID} Name : {shoes.name.toUpperCase()} Brand :{shoes.brand} Price : {shoes.price} Size : {shoes.size.join(",")} Color : {shoes.color}</p>
+            <button onClick={addToCard}>Add to Card</button>
         </div>
       })
 
