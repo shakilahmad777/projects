@@ -21,3 +21,10 @@ console.log(name, isMale);
 
 // this is local scope
 
+function add() {
+    const id = 1122;
+
+    console.log(id)
+}
+
+add()

@@ -1,6 +1,6 @@
 // lets goooo!!
 
-// variable is very simple patro jar modhe barbar leclar kora jay and barbar assaign kora jay and unsecurity patro jake barbar declar and assaign kora jay //
+// variable is very pwoer full patro jar modhe barbar leclar kora jay and barbar assaign kora jay and unsecurity patro jake barbar declar and assaign kora jay //
 
 var name = 'shakil'; // Allow
 
