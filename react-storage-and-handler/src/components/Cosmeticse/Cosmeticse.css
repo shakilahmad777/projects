@@ -1,0 +1,19 @@
+.cosmetic-product {
+    width: 50%;
+    margin: 3% auto;
+    padding: 1rem 0;
+    color: teal;
+    display: flex;
+    flex-direction: column;
+    border: 5px solid orangered;
+    background-color: cadetblue;
+    border-radius: 0.5rem;
+}
+.cosmetic-product > li {
+    list-style: none;
+}
+li:first-child {
+    color: orangered;
+    font-weight: bolder;
+    font-size: large;
+}
