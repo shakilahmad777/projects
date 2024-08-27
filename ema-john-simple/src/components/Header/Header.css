@@ -1,0 +1,18 @@
+.header {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background:  #1C2B35;
+    padding: 0 100px;
+    /* overflow: hidden; */
+}
+.header .logo {
+    width: 15%;
+    height: 50%;
+}
+.header .menu a {
+    color: #ffffff;
+    padding: 0 1.5rem;
+    flex-shrink: 0;
+}
