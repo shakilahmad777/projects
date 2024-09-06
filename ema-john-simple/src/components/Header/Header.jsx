@@ -4,6 +4,7 @@ import logo from '../../images/Logo.png'
 
 const Header = () => {
     return (
+        <>
         <nav className='header'>
             <div className="logo">
                 <img src={logo} alt="" />
@@ -15,6 +16,10 @@ const Header = () => {
                 <a href="/login">Login</a>
             </div>
         </nav>
+        <main>
+            
+        </main>
+        </>
     );
 };
 
