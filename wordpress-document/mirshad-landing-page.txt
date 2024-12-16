@@ -1,0 +1,11 @@
+1.Database Information: 
+
+Database name : mirshad
+Database username : shakil
+Database user password : eu3w[pWX!lvL1i[e
+Database Table Prefix : mr_
+
+2. WardPress Dashbord Login Info:
+
+username : shakil
+password : 4200$!#
